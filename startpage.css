@@ -1,0 +1,152 @@
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('fonts/inconsolata-v21-latin-regular.woff2'),
+       url('fonts/inconsolata-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/inconsolata-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+	background: linear-gradient(-45deg, #f4dbd6, #f0c6c6, #f5bde6, #c6a0f6, #ed8796, #ee99a0, #f5a97f) no-repeat fixed center;
+	background-size: 300% 300%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Inconsolata', monospace;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	
+@keyframes gradient {
+	0% {
+		background-position: 25% 50%;
+	}
+	25%{
+		background-position: 25% 25%;
+	}
+	50% {
+		background-position: 50% 50%;
+	}
+	75% {
+		background-position: 25% 75%
+	}
+	100% {
+		background-position: 25% 50%;
+	}
+}
+
+.flexbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainbox {
+	background-color: var(--bg);
+	border-radius: 25px;
+	padding: 25px;
+}
+
+.alpha {
+	all:unset;
+	color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+}
+
+
+/*   Title   */
+
+.title {
+	text-align: center;
+	padding-bottom: 3vh;
+	color: var(--title);
+}
+
+.hl {
+	color: var(--hl);
+}
+
+
+
+/*   Clock + Date   */
+
+#clock {
+	text-align: center;
+}
+
+#clock, #cal {
+	color: var(--title);
+	margin-left: 1rem;
+}
+
+
+
+/*   Quicklinks   */
+
+b {
+	color: var(--title);
+}
+
+li {
+	list-style-type: none;
+	margin-left: -1rem;
+}
+
+a {
+	all: unset;
+	color: var(--fg);
+}
+
+a:hover {
+	color: var(--title);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+
+/*   Searchbar   */
+
+.search {
+	margin-top: 12px;
+}
+
+.search input {
+	background-color: var(--fg);
+	padding: 4px 0.5rem 4px 0.75rem;
+	height: 1.5rem;
+	width: 80%;
+	border-radius: 20px;
+	margin-bottom: 16px;
+	margin-left: 26px;
+	border: 0px;
+}
+
+.search button {
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+	color: #D9E0EE;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+
+/*   Decoration   */
+.art img {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 30px;
+	margin-right: 25px;
+	margin-left: 35px;
+}
+
+.colcir {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+}
