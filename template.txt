@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>LL's site</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="LL's website">
+    <meta property="og:url" content="https://hrtowii.github.io">
+    <meta property="og:title" content="Webwsite of htrowii">
+    <meta property="og:description" content="Sussy">
+    <meta property="og:type" content="website">
+    <meta name="og:image" itemprop="image" content="../img/oneshotsun.png">
+    <link rel='stylesheet' href='../main.css'>
+    <link rel="icon" href="../img/oneshotsun.ico">
+    <script src="https://kit.fontawesome.com/e23a98c840.js" crossorigin="anonymous"></script>
+  </head>
+ 
+<body>
+ <div id="navbarbutton">
+        <a href="javascript:void(0);" class="navbaricon" onclick="navExpand()"><i class="sticky fa fa-bars"></i></a>
+    </div>
+    <div id="navbar" class="hidden">
+            <a href="javascript:void(0);" class="icon" onclick="navExpand()"><i class="fa fa-bars"></i></a>
+            <a href="../index.html">Home</a>
+     
+            <a href="../achievements.html">Achievements</a>
+            <a class="active" href="javascript:void(0)">Blog</a>
+        <span class="navsocial">
+            <a href="https://instagram.com/htrowii"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/hrtowii"><i class="fab fa-github"></i></a>
+        </span>
+    </div>
+
+<div class="content">
